@@ -3,10 +3,8 @@
 import db from '../../../lib/db'
 
 export default async function handler(req, res) {
-    console.log(req.body)
-
     let data = req.body.data
-    data.blockedUsers = '' 
+    data.blockedUsers = ''
     let created = await db.createRestaurant(data)
     res.status(200).json({ data: created })
 }
