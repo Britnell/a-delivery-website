@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  type     String? @db.VarChar(255)
+  username String? @db.VarChar(255)
+  email    String  @unique(map: "email") @db.VarChar(255)
+}
+
+model Restaurant {
+  id           Int     @id @default(autoincrement())
+  name         String? @db.VarChar(255)
+  description  String? @db.Text
+  blockedUsers String? @db.Text
+  ownerId      Int
+
+  @@index([ownerId], map: "ownerId")
+}
+
+model Meal {
+  id           Int     @id @default(autoincrement())
+  name         String? @db.VarChar(255)
+  description  String? @db.Text
+  price        String? @db.VarChar(255)
+  restaurantId Int
+
+  @@index([restaurantId], map: "restaurantId")
+}
+
+model Mealorder {
+  id           Int     @id @default(autoincrement())
+  meals        String? @db.Text
+  date         String? @db.VarChar(255)
+  total        String? @db.VarChar(255)
+  status       String? @db.VarChar(255)
+  history      String? @db.Text
+  restaurantId Int
+  userId       Int
+
+  @@index([restaurantId], map: "restaurantId")
+  @@index([userId], map: "userId")
+}

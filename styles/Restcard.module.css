@@ -1,0 +1,84 @@
+
+.container {
+    width: 320px;
+    /* height: 220px; */
+
+    margin: 20px;
+    padding: 20px;
+    
+    background-color: rgb(139, 145, 167);
+    border-radius: 30px;
+
+}
+
+.container:hover {
+    background-color: rgb(122, 132, 165);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+.name {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.description {
+    font-style: italic;
+    height: 50%;
+}
+
+.icon {
+    float: right;
+    width:  30px; height: 30px; 
+    background-color: grey;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div {
+    margin-bottom: 6px;
+}
+
+.container input {
+    width: 80%;
+}
+
+.container textarea {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------  */
+
+.editcard {
+    width: 320px;
+    height: 220px;
+
+    margin: 20px;
+    padding: 20px;
+    
+    background-color: rgb(139, 145, 167);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.editsubmit {
+    grid-column: 1 / 3;
+}
+
+.namerow {
+    display: flex;
+    flex-direction: row;
+}
+
+.namerow div {
+    flex: 1 0 auto;
+}
+.namerow div input {
+    width: 100%;
+}
+

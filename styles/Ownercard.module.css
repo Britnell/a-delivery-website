@@ -1,0 +1,23 @@
+
+.container {
+    width: 320px;
+    height: 220px;
+
+    margin: 20px;
+    padding: 20px;
+    
+    background-color: rgb(139, 145, 167);
+    border-radius: 30px;
+}
+
+.container:hover {
+    /* background-color: rgb(99, 115, 175); */
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.description {
+    font-style: italic;
+}

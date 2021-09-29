@@ -1,0 +1,48 @@
+
+.container {
+    /* width: 280px; */
+    /* height: 180px; */
+
+    margin-top: 20px;
+    
+    margin: 20px 30px;
+
+    max-width: 580px;
+    
+    /* margin-left: auto;margin-right: auto; */
+    
+    padding: 18px;
+
+    border-radius: 20px;
+    background-color: rgb(139, 157, 214);
+    
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.container:hover {
+    background-color: rgb(89, 139, 248);
+}
+
+.name {
+    flex: 1 0 auto;
+    font-size: 1.8rem;
+}
+
+.description {
+    flex: 3 0 auto;
+    font-style: italic;
+    
+}
+
+.price {
+    text-align: right;
+}
+
+.icon {
+    float: right;
+    width:  30px; height: 30px; 
+    background-color: grey;
+    border-radius: 100px;
+}
+

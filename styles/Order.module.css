@@ -1,0 +1,48 @@
+
+.container {
+
+    padding: 18px;
+
+    border: 2px solid black;
+    border-radius: 18px;
+
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3) ;
+}
+
+.title {
+    font-size: 1.4rem; 
+}
+
+.ordertitle {
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name {
+
+}
+
+.price {
+
+}
+
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.error {
+    color: rgb(185, 2, 2);
+    font-weight: 600;
+}

@@ -1,0 +1,37 @@
+
+
+.main {
+    display: flex;
+    flex-direction: row; 
+}
+
+.meals {
+    flex: 4 0 auto;
+    
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr) ); */
+
+}
+
+.order {
+    flex: 1 0 auto;
+    max-width: 300px;
+    margin-right: 28px;
+}
+
+
+@media screen and (max-width: 840px){
+    
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .order {
+        
+        max-width: none;
+        min-width: 280px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,36 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px 40px;
+
+}
+
+.addr {
+    /* margin: 8px; */
+    text-decoration: underline;
+
+    flex: 1 0 auto;
+
+    display: flex;
+    
+}
+
+    .addr div {
+        margin: 8px;
+    }
+
+.back {
+    flex: 0 0 auto;
+    margin: 8px;
+
+    padding: 12px 16px;
+    border-radius: 30px;
+    background-color: rgb(206, 206, 206);
+    /* border: 1px solid black; */
+}
+
+.back:hover {
+    text-decoration: underline;
+}
