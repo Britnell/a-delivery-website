@@ -30,7 +30,7 @@ function Welcome(){
       <p>This is the story of the Food Delivery Company</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt varius ex. Sed massa ligula, pellentesque imperdiet leo vitae, blandit efficitur felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras placerat maximus molestie. In hac habitasse platea dictumst. Integer et nunc pharetra, tristique justo vel, euismod neque. Sed erat enim, efficitur id urna nec, vestibulum consequat lectus. Nam lobortis gravida odio. Etiam in sollicitudin justo, nec hendrerit elit. Donec tincidunt efficitur turpis quis feugiat. Nullam non consectetur nisi. Proin non efficitur neque. Curabitur vehicula nisl vulputate odio iaculis porttitor. Quisque vehicula condimentum sapien a porttitor. Praesent tempor consectetur dui sed fermentum. In consequat hendrerit laoreet.</p>
       <p>Donec quis pellentesque leo, eget volutpat nisi. Nam vestibulum, enim porta hendrerit tristique, lorem justo varius mi, ut ullamcorper dui nulla volutpat enim. Nulla et nibh est. Curabitur fermentum dui arcu, nec mollis ex luctus id. Vestibulum sollicitudin sit amet nisi in condimentum. Quisque odio nulla, lacinia varius libero ultricies, condimentum accumsan dui. In vulputate massa vel leo ornare congue. Nulla viverra metus nisl, et imperdiet tortor posuere quis. Maecenas ac felis sem. Suspendisse bibendum commodo ligula, vel lacinia nisl iaculis at. Nunc semper odio sed nibh ultrices sollicitudin. </p>
-      
+
     </div>
   )
 }
@@ -40,7 +40,7 @@ export default function Home() {
   const [state,dispatch] = useAppState()
   const {page} = state;
 
-  console.log(' <Home : ',state) 
+  // console.log(' <Home : ',state) 
 
   // * Fetch session user
   React.useEffect(()=>{
@@ -100,7 +100,9 @@ export default function Home() {
 
       {main}
       
-      <footer></footer>
+      <footer>
+        <div className={styles.footer}></div>
+      </footer>
     </div>
   
 }

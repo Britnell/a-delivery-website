@@ -1,4 +1,3 @@
-// import fetchJson from "../../../lib/fetchJson";
 
 import withSession from "../../../lib/session";
 import db from '../../../lib/db'

@@ -23,8 +23,6 @@ export default async function handler(req, res) {
         status,
         history: JSON.stringify(hist),
     })
-
-    console.log(' update ', order, resp )
     
     res.status(200).json({data: resp }) 
 }
